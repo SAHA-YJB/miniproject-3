@@ -5,10 +5,10 @@ modeToggle.addEventListener("click", () => {
 
   if (currentTheme === "dark") {
     document.body.setAttribute("data-theme", "light")
-    modeToggle.textContent = "다크 모드"
+    modeToggle.textContent = "dark"
   } else {
     document.body.setAttribute("data-theme", "dark")
-    modeToggle.textContent = "라이트 모드"
+    modeToggle.textContent = "light"
   }
 })
 
@@ -19,10 +19,10 @@ function setDefaultTheme() {
   
   if (currentHour >= 18 || currentHour < 6) {
     document.body.setAttribute("data-theme", "dark");
-    modeToggle.textContent = "라이트 모드";
+    modeToggle.textContent = "light";
   } else {
     document.body.setAttribute("data-theme", "light");
-    modeToggle.textContent = "다크 모드";
+    modeToggle.textContent = "dark";
   }
 }
 setDefaultTheme();

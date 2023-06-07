@@ -7,26 +7,18 @@ body[data-theme="dark"] {
   background-color: #333;
   color: #f1f1f1;
 }
-.btn-inner{
-  background-color: green;
-  width: 100px;
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  cursor: pointer;
-}
+
 .dark-btn {
   background-color: #f1f1f1;
   color: #333;
   font-size: 14px;
   outline: none;
   border: 2px solid #302e2e;
-  border-radius: 3px;
-  width: 90px;
-  position: absolute;
-  right: 10px;
+  border-radius: 5px;
+  width: 50px;
 }
+
 .dark-btn:hover{
   background-color: #333;
   color: #f1f1f1;
-}
+} 
