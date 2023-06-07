@@ -127,18 +127,19 @@ figure.snip1200.hover p {
 
 /* 타이틀 */
 .header {
-  border-bottom: #000000 5px;
+  border: #000000 solid 3px;
   align-items: center;
   justify-content: center;
   text-align: center;
+  border-radius: 50px;
 
-  height: 12.5rem;
-  padding-top: 70px;
+  height: 150px;
+  padding-top: 50px;
   margin-bottom: 50px;
   margin-top: 50px;
   color: black;
 
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
 }
 .footer {
@@ -147,12 +148,12 @@ figure.snip1200.hover p {
   align-items: center;
   justify-content: center;
 
-  border-radius: 25px;
+  border-radius: 50px;
   text-align: center;
-  border: #000000 solid 10px;
+  border: #000000 solid 3px;
 
   height: 6.25rem;
-  width: 80%;
+  width: 70%;
   margin: 35px auto 0px;
 }
 /* 타이틀 끝 */
