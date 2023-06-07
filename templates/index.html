@@ -20,9 +20,97 @@
         ></script>
 
         <title>miniproject-3team</title>
+
+        <!-- ----- css stlye link -----  -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='reset.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
     </head>
 
     <body>
-        <section class="community-board"></section>
+        <section class="community-board">
+            <h2>방명록</h2>
+            <div class="save-box">
+                <p>방명록을 남겨보세요~</p>
+                <div class="input-com">
+                    <input class="comment-box" type="text" placeholder="내용을 입력해 주세요." />
+                    <input class="name-box" type="text" placeholder="닉네임을 입력해주세요" />
+                    <button>방명록 남기기</button>
+                </div>
+            </div>
+            <div class="content-box">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="num">넘버</th>
+                            <th class="user">user</th>
+                            <th class="comment">내용</th>
+                            <th class="date">기록날짜</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>홍길이</td>
+                            <td>잘 보고 갑니다.</td>
+                            <td>기록날짜</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>홍길이</td>
+                            <td>잘 보고 갑니다.</td>
+                            <td>기록날짜</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>홍길이</td>
+                            <td>잘 보고 갑니다.</td>
+                            <td>기록날짜</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>홍길이</td>
+                            <td>잘 보고 갑니다.</td>
+                            <td>기록날짜</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>홍길이</td>
+                            <td>잘 보고 갑니다.</td>
+                            <td>기록날짜</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>홍길이</td>
+                            <td>잘 보고 갑니다.</td>
+                            <td>기록날짜</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>홍길이</td>
+                            <td>잘 보고 갑니다.</td>
+                            <td>기록날짜</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>홍길이</td>
+                            <td>잘 보고 갑니다.</td>
+                            <td>기록날짜</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>홍길이</td>
+                            <td>잘 보고 갑니다.</td>
+                            <td>기록날짜</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>홍길이</td>
+                            <td>잘 보고 갑니다.</td>
+                            <td>기록날짜</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
     </body>
 </html>
