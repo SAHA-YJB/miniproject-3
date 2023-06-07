@@ -1,0 +1,57 @@
+/* setting reset Layout Style */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6{
+  margin: 0;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+ol,
+ul {
+  list-style: none;
+}
+
+input,
+button,
+textarea {
+  outline: 0;
+  border-radius: 0;
+  border: 0;
+  color: #777;
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+
+  font-size: 14px;
+}
+textarea {
+  resize: none;
+}
+
+img {
+  display: block;
+}
+em {
+  font-style: normal;
+}
+b {
+  font-weight: normal;
+}
+.center {
+  width: 100%;
+  margin: auto;
+  max-width: 1440px;
+  height: auto;
+}
+
+
+body {
+  font-size: 14px;
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+  letter-spacing: 1px;
+
+}
