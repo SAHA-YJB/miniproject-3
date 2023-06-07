@@ -13,7 +13,7 @@ def home():
    return render_template('index.html')
 
 
-@app.route("/delete", methods=["POST"]) #삭제 메서드
+@app.route("/delete", methods=["POST"]) #삭제 메서드!
 def delete_post():
     id_receive = request.form['id_give']
     id = int(id_receive)
