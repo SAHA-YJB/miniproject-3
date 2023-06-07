@@ -127,7 +127,7 @@ figure.snip1200.hover p {
 
 /* 타이틀 */
 .header {
-  border: #000000 solid 10px;
+  border-bottom: #000000 5px;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -135,13 +135,11 @@ figure.snip1200.hover p {
   height: 12.5rem;
   padding-top: 70px;
   margin-bottom: 50px;
-  background-color: black;
-  color: #ffffff;
+  margin-top: 50px;
+  color: black;
 
   width: 80%;
   margin: 0 auto;
-
-  border-radius: 25px;
 }
 .footer {
   display: flex;
