@@ -16,7 +16,7 @@ def update_post():
     ucomment_receive = request.form['ucomment_give']
     num_receive = request.form['num_give']
     db.comment.update_one({'num': int(num_receive)},{'$set':{'comment':ucomment_receive}})
-    return 0
+    return {'msg' : '수정 완료!'}
 
 @app.route("/guestbook", methods=["POST"])
 def guestbook_post():
