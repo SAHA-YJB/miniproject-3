@@ -131,13 +131,28 @@ figure.snip1200.hover p {
   text-align: center;
 
   height: 12.5rem;
-  font-size: xx-large;
   padding-top: 70px;
   margin-bottom: 50px;
+  background-color: black;
+  color: #ffffff;
 
   width: 80%;
   margin: 0 auto;
 
   border-radius: 25px;
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 25px;
+  text-align: center;
+  border: #000000 solid 10px;
+
+  height: 6.25rem;
+  width: 80%;
+  margin: 35px auto 0px;
 }
 /* 타이틀 끝 */
