@@ -1,10 +1,15 @@
 from flask import Flask, render_template, request, jsonify
 app = Flask(__name__)
 
-from datetime import datetime #날짜, 시간 가져오는 라이브러리
-
 from pymongo import MongoClient
-client = MongoClient('내 MongoDB URL')
+import certifi
+
+ca = certifi.where()
+
+client = MongoClient(
+    "mongodb+srv://sparta:test@cluster0.oveyhos.mongodb.net/?retryWrites=true&w=majority",
+    tlsCAFile=ca,
+)
 db = client.dbsparta
 
 
