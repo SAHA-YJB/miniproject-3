@@ -3,18 +3,9 @@ app = Flask(__name__)
 
 from datetime import datetime #날짜, 시간 가져오는 라이브러리
 
-# import bcrypt
-
 from pymongo import MongoClient
-import certifi
-
-ca = certifi.where()
-
-client = MongoClient(
-    "",
-)
+client = MongoClient('내 MongoDB URL')
 db = client.dbsparta
-
 
 
 @app.route('/')
@@ -22,19 +13,11 @@ def home():
    return render_template('index.html')
 
 
-@app.route("/delete", methods=["POST"]) #삭제 메서드
+@app.route("/delete", methods=["POST"]) #삭제 메서드!
 def delete_post():
     id_receive = request.form['id_give']
     id = int(id_receive)
-    findComments = list(db.comment.find({},{'_id':False}))
-    for a in findComments:
-        findId = (a['id']) 
-        if(findId > id):
-            fixId = findId-1
-            db.comment.update_one({'id': findId},{'$set':{'id':fixId}})
-        else:
-            db.comment.delete_one({'id':id})
-
+    db.comment.delete_one({'id':id})
     return jsonify({'msg' : '삭제 완료!'})
 
 @app.route("/update", methods=["POST"]) #수정 메서드
@@ -48,21 +31,17 @@ def update_post():
 def guestbook_post():
     name_receive = request.form['name_give']
     comment_receive = request.form['comment_give']
-    # password_receive = request.form['password_give']
-    # password_receive = "gustjdgustjd"
-    # password = password_receive.encode('utf-8')
-    # hashed = bcrypt.hashpw(password, bcrypt.gensalt())
-    # insertPw = hashed.decode()
     now = datetime.now()
     date= "%d년%d월%d일%d시" % (now.year, now.month, now.day, now.hour)
     comment_list = list(db.comment.find({}, {'_id': False}))
     count = len(comment_list) + 1
+    print(count)
     doc ={
 
         "id" : count,
         "name" : name_receive,
         "comment" : comment_receive,
-        "date" : date,
+        "date" : date
     }
     db.comment.insert_one(doc)
     return jsonify({'msg': '저장 완료!'})
