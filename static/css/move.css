@@ -1,0 +1,41 @@
+header h1 {
+  display: none;
+}
+.inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 30px 15px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 15px;
+  gap: 10px;
+}
+
+.btn-inner {
+  position: absolute;
+  right: 15px;
+}
+
+.github-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+}
+section h2 {
+  font-size: 50px;
+}
+section h6 {
+  font-size: 24px;
+}
+section a {
+  text-decoration: none;
+  color: rgb(240, 224, 204);
+}
