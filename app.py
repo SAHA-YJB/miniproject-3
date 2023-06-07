@@ -4,18 +4,27 @@ app = Flask(__name__)
 from datetime import datetime #날짜, 시간 가져오는 라이브러리
 
 from pymongo import MongoClient
-client = MongoClient('내 mongoDB URL')
+client = MongoClient('내 MongoDB URL')
 db = client.dbsparta
+
 
 @app.route('/')
 def home():
    return render_template('index.html')
 
+
+@app.route("/delete", methods=["POST"]) #삭제 메서드
+def delete_post():
+    id_receive = request.form['id_give']
+    id = int(id_receive)
+    db.comment.delete_one({'id':id})
+    return jsonify({'msg' : '삭제 완료!'})
+
 @app.route("/update", methods=["POST"]) #수정 메서드
 def update_post():
     ucomment_receive = request.form['ucomment_give']
-    num_receive = request.form['num_give']
-    db.comment.update_one({'num': int(num_receive)},{'$set':{'comment':ucomment_receive}})
+    id_receive = request.form['id_give']
+    db.comment.update_one({'id': int(id_receive)},{'$set':{'comment':ucomment_receive}})
     return {'msg' : '수정 완료!'}
 
 @app.route("/guestbook", methods=["POST"])
