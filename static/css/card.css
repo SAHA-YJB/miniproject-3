@@ -46,7 +46,9 @@ figure.snip1200 figcaption {
   bottom: 45%;
   border: 1px solid white;
   border-width: 1px 1px 0;
+  text-align: left;
 }
+
 figure.snip1200 .heading {
   overflow: hidden;
   -webkit-transform: translateY(50%);
