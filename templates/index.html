@@ -21,11 +21,15 @@
   <link rel="stylesheet" href="../static/css/move.css">
   <link rel="stylesheet" href="../static/css/main.css">
   
-  <link rel="stylesheet" href="{{ url_for('static', filename='reset.css') }}">
-  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  <!-- <link rel="stylesheet" href="{{ url_for('static', filename='reset.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" /> -->
   <link rel="stylesheet" href="../static/css/style.css" />
   <link rel="stylesheet" href="../static/css/card.css" />
   <link rel="stylesheet" href="../static/css/reset.css" />
+
+          <!-- get data link -->
+          <script src="{{ url_for('static', filename='js/data.js') }}"></script>
+          <script src="{{ url_for('static', filename='js/update.js') }}"></script>
 
 <<<<<<< HEAD
   <body>
@@ -207,89 +211,63 @@
     </div>
   </div>
 
-  <section class="community-board">
+  <section class="guestbook">
     <h2>방명록</h2>
     <div class="save-box">
-      <p>방명록을 남겨보세요~</p>
-      <div class="input-com">
-        <input class="comment-box" type="text" placeholder="내용을 입력해 주세요." />
-        <input class="name-box" type="text" placeholder="닉네임을 입력해주세요" />
-        <button>방명록 남기기</button>
-      </div>
+        <p>방명록을 남겨보세요~</p>
+        <div class="input-com">
+            <input
+                id="name-box"
+                class="name-box"
+                type="text"
+                placeholder="닉네임을 입력해주세요"
+            />
+            <button onclick="save_comment()">방명록 남기기</button>
+            <input
+                id="comment-box"
+                class="comment-box"
+                type="text"
+                placeholder="내용을 입력해 주세요."
+            />
+        </div>
     </div>
     <div class="content-box">
-      <table>
-        <thead>
-          <tr>
-            <th class="num">넘버</th>
-            <th class="user">user</th>
-            <th class="comment">내용</th>
-            <th class="date">기록날짜</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>홍길이</td>
-            <td>잘 보고 갑니다.</td>
-            <td>기록날짜</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>홍길이</td>
-            <td>잘 보고 갑니다.</td>
-            <td>기록날짜</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>홍길이</td>
-            <td>잘 보고 갑니다.</td>
-            <td>기록날짜</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>홍길이</td>
-            <td>잘 보고 갑니다.</td>
-            <td>기록날짜</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>홍길이</td>
-            <td>잘 보고 갑니다.</td>
-            <td>기록날짜</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>홍길이</td>
-            <td>잘 보고 갑니다.</td>
-            <td>기록날짜</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>홍길이</td>
-            <td>잘 보고 갑니다.</td>
-            <td>기록날짜</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>홍길이</td>
-            <td>잘 보고 갑니다.</td>
-            <td>기록날짜</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>홍길이</td>
-            <td>잘 보고 갑니다.</td>
-            <td>기록날짜</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>홍길이</td>
-            <td>잘 보고 갑니다.</td>
-            <td>기록날짜</td>
-          </tr>
-        </tbody>
-      </table>
+        <table>
+            <thead>
+                <tr>
+                    <th class="num">넘버</th>
+                    <th class="user">user</th>
+                    <th class="comment">내용</th>
+                    <th class="date">기록날짜</th>
+                    <th class="btn-thead">수정/삭제</th>
+                </tr>
+            </thead>
+            <tbody id="comments-box">
+                <tr>
+                    <td>1</td>
+                    <td>홍길이</td>
+                    <td class="txt-box bf">잘 보고 갑니다.</td>
+                    <td class="update-input-box af">
+                        <input
+                            class="comment-update"
+                            type="text"
+                            placeholder="내용을 입력해 주세요."
+                        />
+                    </td>
+                    <td>2023.06.07 1시</td>
+                    <td class="btn-box btn-before bf">
+                        <button onclick="update_btn(this)" class="btn-click">수정</button>
+                        <button onclick="delete_btn()" class="btn-click">삭제</button>
+                    </td>
+                    <td class="btn-box btn-after af">
+                        <button onclick="update_scc()" class="btn-click">수정 완료</button>
+                        <button onclick="update_cancle()" class="btn-click">
+                            수정 취소
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-  </section>
+</section>
 </body>
