@@ -1,6 +1,7 @@
 
 .guestbook{
   width: 80%;
+  max-width: 1440px;
   /* height: 800px; */
   background: gray;
   margin: auto;
@@ -91,22 +92,22 @@ color: black;
 display: none;
 }
 .guestbook .num{
-  width: 40px;
+  width: 5%;
 
 }
 .guestbook .user{
-  width: 160px;
+  width: 15%;
 
 }
 .guestbook .comment{
-  width: 400px;
+  width: 45%;
 }
 .guestbook .date{
-  width: 200px;
+  width: 25%;
 
 }
-.guestbook .btn{
-  width: 200px;
+.guestbook .btn-thead{
+  width: 20%;
 }
 .guestbook .btn-click{
   width: 50%;
