@@ -27,7 +27,7 @@
         <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
 
         <!-- get data link -->
-        <!-- <script src="{{ url_for('static', filename='js/get_data.js') }}"></script> -->
+        <script src="{{ url_for('static', filename='js/data.js') }}"></script>
     </head>
 
     <body>
@@ -36,9 +36,19 @@
             <div class="save-box">
                 <p>방명록을 남겨보세요~</p>
                 <div class="input-com">
-                    <input class="name-box" type="text" placeholder="닉네임을 입력해주세요" />
-                    <button>방명록 남기기</button>
-                    <input class="comment-box" type="text" placeholder="내용을 입력해 주세요." />
+                    <input
+                        id="name-box"
+                        class="name-box"
+                        type="text"
+                        placeholder="닉네임을 입력해주세요"
+                    />
+                    <button onclick="save_comment()">방명록 남기기</button>
+                    <input
+                        id="comment-box"
+                        class="comment-box"
+                        type="text"
+                        placeholder="내용을 입력해 주세요."
+                    />
                 </div>
             </div>
             <div class="content-box">
