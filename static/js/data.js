@@ -3,7 +3,7 @@ $(document).ready(function () {
 });
 
 function listing() {
-    fetch('/comment')
+    fetch('/guestbook')
         .then((res) => res.json())
         .then((data) => {
             let rows = data['result'];
@@ -32,8 +32,8 @@ function save_comment() {
     let comment = $('#comment-box').val();
 
     let formData = new FormData();
-    formData.append('name_receive', name);
-    formData.append('comment_receive', comment);
+    formData.append('name_give', name);
+    formData.append('comment_give', comment);
     fetch('/guestbook', { method: 'POST', body: formData })
         .then((response) => response.json())
         .then((data) => {

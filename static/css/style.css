@@ -75,9 +75,16 @@ color: black;
 .guestbook table td{
   padding-left: 12px;
   background: white;
+  border-bottom: solid 1px black;
+}
+.guestbook table td:nth-child(1){
+  padding: 0;
+  text-align: center;
+
 }
 .guestbook .num{
   width: 40px;
+
 }
 .guestbook .user{
   width: 160px;
