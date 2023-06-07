@@ -68,7 +68,7 @@ color: black;
   border-right: solid 1px black;
 
 }
-.guestbook table th:nth-child(4),td:nth-child(4){
+.guestbook table th:nth-child(5),td:nth-child(5){
   border-right: none;
 
 }
@@ -82,6 +82,14 @@ color: black;
   text-align: center;
 
 }
+.guestbook table td.btn-box{
+  padding: 0;
+  padding-left: 0;
+  display: flex;
+}
+.guestbook table td.btn-box.af{
+display: none;
+}
 .guestbook .num{
   width: 40px;
 
@@ -90,12 +98,46 @@ color: black;
   width: 160px;
 
 }
+.guestbook .comment{
+  width: 400px;
+}
 .guestbook .date{
-  width: 300px;
+  width: 200px;
 
 }
-
+.guestbook .btn{
+  width: 200px;
+}
+.guestbook .btn-click{
+  width: 50%;
+  height: 100%;
+  background: palegreen;
+  padding: 12px 0;
+}
+.guestbook .btn-click:nth-child(1){
+  border-right: solid 1px black;
+}
 .content-box{
   width: 100%;
   height: auto;
 }
+.update-input-box{
+  display: none;
+}
+.update-input-box input{
+  display: none;
+}
+#choose .btn-box.af{
+  display: flex;
+}
+#choose .update-input-box{
+  display: block;
+}
+#choose .update-input-box input{
+  display: block;
+}
+#choose .bf{
+  display: none;
+}
+
+
