@@ -1,5 +1,5 @@
 
-.community-board{
+.guestbook{
   width: 80%;
   /* height: 800px; */
   background: gray;
@@ -7,7 +7,7 @@
   padding: 60px 0 120px;
 }
 
-.community-board h2{
+.guestbook h2{
   padding: 30px 0;
   width: 100%;
   text-align: center;
@@ -56,34 +56,34 @@ font-size: 16px;
 color: black;
 
 }
-.community-board table{
+.guestbook table{
   background: pink;
   width: 100%;
 }
-.community-board table th{
+.guestbook table th{
   text-align: center;
 }
-.community-board table th,td{
+.guestbook table th,td{
   padding: 12px 0;
   border-right: solid 1px black;
 
 }
-.community-board table th:nth-child(4),td:nth-child(4){
+.guestbook table th:nth-child(4),td:nth-child(4){
   border-right: none;
 
 }
-.community-board table td{
+.guestbook table td{
   padding-left: 12px;
   background: white;
 }
-.community-board .num{
+.guestbook .num{
   width: 40px;
 }
-.community-board .user{
+.guestbook .user{
   width: 160px;
 
 }
-.community-board .date{
+.guestbook .date{
   width: 300px;
 
 }
