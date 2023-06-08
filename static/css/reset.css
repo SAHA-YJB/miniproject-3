@@ -1,19 +1,24 @@
 /* setting reset Layout Style */
 @font-face {
   font-family: 'NeoDunggeunmoPro-Regular';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/NeoDunggeunmoPro-Regular.woff2') format('woff2');
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/NeoDunggeunmoPro-Regular.woff2')
+    format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
-
 * {
-  
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-h1, h2, h3, h4, h5, h6{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 a {
@@ -32,7 +37,7 @@ textarea {
   border-radius: 0;
   border: 0;
   color: #777;
-  font-family: "Roboto", "Noto Sans KR", sans-serif;
+  font-family: 'Roboto', 'Noto Sans KR', sans-serif;
 
   font-size: 14px;
 }
@@ -56,10 +61,8 @@ b {
   height: auto;
 }
 
-
 body {
   font-size: 14px;
-  font-family: "Roboto", "Noto Sans KR", sans-serif;
+  font-family: 'Roboto', 'Noto Sans KR', sans-serif;
   letter-spacing: 1px;
-
 }
