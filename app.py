@@ -26,6 +26,7 @@ def delete_post():
             db.comment.update_one({'id':a['id']},{'$set':{'id':a['id']-1}})
         else : 
             db.comment.delete_one({'id':id})
+        return {'msg' : '삭제 완료!'}
 
 @app.route("/update", methods=["POST"]) #수정 메서드
 
