@@ -19,5 +19,8 @@ venv2/
 *.docx
 *.prettierrc
 *.py
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 # ignore all .pdf files in the doc/ directory
